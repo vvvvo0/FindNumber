@@ -28,13 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.display = new System.Windows.Forms.Label();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.ButtonInput = new System.Windows.Forms.Button();
+            this.ButtonStart = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // display
+            // 
+            this.display.Dock = System.Windows.Forms.DockStyle.Top;
+            this.display.Font = new System.Drawing.Font("함초롬돋움", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.display.Location = new System.Drawing.Point(0, 0);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(471, 49);
+            this.display.TabIndex = 0;
+            this.display.Text = "게임을 시작합니다";
+            this.display.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox
+            // 
+            this.textBox.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox.Location = new System.Drawing.Point(80, 101);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(142, 32);
+            this.textBox.TabIndex = 1;
+            // 
+            // ButtonInput
+            // 
+            this.ButtonInput.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ButtonInput.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ButtonInput.Location = new System.Drawing.Point(267, 101);
+            this.ButtonInput.Name = "ButtonInput";
+            this.ButtonInput.Size = new System.Drawing.Size(142, 34);
+            this.ButtonInput.TabIndex = 2;
+            this.ButtonInput.Text = "입력";
+            this.ButtonInput.UseVisualStyleBackColor = false;
+            // 
+            // ButtonStart
+            // 
+            this.ButtonStart.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ButtonStart.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ButtonStart.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ButtonStart.Location = new System.Drawing.Point(0, 190);
+            this.ButtonStart.Name = "ButtonStart";
+            this.ButtonStart.Size = new System.Drawing.Size(471, 68);
+            this.ButtonStart.TabIndex = 3;
+            this.ButtonStart.Text = "게임 시작";
+            this.ButtonStart.UseVisualStyleBackColor = false;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(471, 258);
+            this.Controls.Add(this.ButtonStart);
+            this.Controls.Add(this.ButtonInput);
+            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.display);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label display;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Button ButtonInput;
+        private System.Windows.Forms.Button ButtonStart;
     }
 }
 
