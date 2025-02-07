@@ -24,5 +24,25 @@ namespace FindNumber
             chance = 10;
             display.Text = "맞출 숫자를 입력하세요.";
         }
+
+        private void ButtonInput_Click(object sender, EventArgs e)
+        {
+            int inputNumber = Int32.Parse(textBox.Text);
+
+            if (inputNumber == findNumber)
+            {
+                display.Text = "승리했습니다!!!";
+            }
+            else
+            {
+                chance--;
+                display.Text = "기회는 " + chance + "번 남았습니다.";
+            }
+
+            if (chance <= 0)
+            {
+                display.Text = "실패했습니다.";
+            }
+        }
     }
 }
