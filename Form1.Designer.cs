@@ -75,6 +75,7 @@
             this.ButtonStart.TabIndex = 3;
             this.ButtonStart.Text = "게임 시작";
             this.ButtonStart.UseVisualStyleBackColor = false;
+            this.ButtonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // Form1
             // 
